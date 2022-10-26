@@ -1,0 +1,4 @@
+var uniqueInOrder=function(iterable){
+  return (Array.isArray(iterable) ? iterable : iterable.split(''))
+  .filter((c, i) => c!== iterable[i+1]);
+}
